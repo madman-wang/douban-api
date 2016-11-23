@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <mt-button type="default" @click='demoEvent'>我是按钮</mt-button>
+    <mt-header fixed title="我就是爱音乐"></mt-header>
   </div>
 </template>
 
@@ -12,6 +12,11 @@ export default {
   name: 'app',
   components: {
     Hello
+  },
+  methods: {
+    demoEvent: function () {
+      this.$toast('我是晒比')
+    }
   }
 }
 </script>

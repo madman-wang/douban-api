@@ -13,8 +13,10 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "mint-ui": "^2.0.5",
-    "vue": "^2.1.0"
+    "vue": "^2.1.0",
+    "whatwg-fetch": "^2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

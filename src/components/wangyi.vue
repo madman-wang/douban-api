@@ -17,6 +17,7 @@
        <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
        <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
      </ul>
+    <router-link to="/second">2</router-link>
   </div>
 </template>
 
@@ -27,12 +28,17 @@
       return {
         msg: 'Welcome to Your Vue.js App'
       }
+    },
+    created () {
+      console.log(this.$http.get('https://bird.ioliu.cn/netease?id=222222').then( (response) => {
+        console.log(response)
+      }))
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
   h1, h2 {
     font-weight: normal;
   }

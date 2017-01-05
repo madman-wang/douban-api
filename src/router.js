@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import hello from './components/wangyi.vue'
-import he from './components/Hello.vue'
 
 const router = new VueRouter({
   mode: 'history',
@@ -9,18 +7,10 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: hello
-    },
-    {
-      path: '/first',
-      component: hello
-    },
-    {
-      path: '/second',
-      component: he
+      component: resolve => require(['./components/Hello.vue'], resolve)
     }
   ]
-})
-Vue.use(VueRouter)
+});
+Vue.use(VueRouter);
 
 export default router

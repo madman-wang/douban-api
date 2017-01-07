@@ -6,7 +6,7 @@ const router = new VueRouter({
   base: __dirname,
   routes: [
     {
-      path: '/',
+      path: '/h',
       component: resolve => require(['./components/Hello.vue'], resolve)
     }
   ]

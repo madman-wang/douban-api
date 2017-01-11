@@ -1,6 +1,5 @@
 body {
   font-family: 'Microsoft YaHei',Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;
-  padding-bottom: 56px;
 }
 .mint-tab-item {
   padding-top: 10px;
@@ -36,6 +35,16 @@ img {
 }
 .mint-tabbar > .mint-tab-item.is-selected {
   border-color: #26a2ff;
+}
+
+.mint-cell-title {
+  color: #333;
+}
+.mint-spinner-double-bounce {
+  position: absolute!important;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
 
